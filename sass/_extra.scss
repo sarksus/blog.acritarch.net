@@ -1,0 +1,74 @@
+/******************************************************************************
+ *   Extra - Put your extra SASS/CSS here, it will get bundled with abridge.css
+ *****************************************************************************/
+ @use '../themes/abridge/sass/abridge.scss';
+ @use '../themes/abridge/sass/colors';
+:root {
+    --fs: 0.98rem;
+}
+
+:root:not(.switch) {
+    --cs: dark;// color-scheme Variable for scrollbars, required for Chrome.
+    --f1: #ccc;// Font Color Primary
+    --f2: #CE14E3;// Font Color Headers
+    --c1: #111;// Background Color Primary
+    --c2: #46074D;// Background Color Secondary
+    --c3: #345;// Table Rows, Block quote edge, Borders
+    --c4: #789;// Disabled Buttons, Borders, mark background
+    --a1: #CE14E3;// link color
+    --a2: #CE14E3;// link hover/focus color
+    --a3: #CE14E3;// link h1-h2 hover/focus color
+    --a4: #AE11BF;// link visited color
+    --cg: #593;// ins green, success
+    --cr: #e33;// del red, errors
+    background-color: #360153;
+    .blockdiv {
+        background-color: #46074D;
+    }
+}
+
+:root:is(.switch) {
+    --cs: light;// color-scheme Variable for scrollbars, required for Chrome.
+    --f1: #4e0057;// Font Color Primary
+    --f2: #760d81;// Font Color Headers
+    --c1: #e9b3dd;// Background Color Primary
+    --c2: #da70c3;// Background Color Secondary
+    --c3: #cde;// Table Rows, Block quote edge, Borders
+    --c4: #013;// Disabled Buttons, Borders, mark background
+    --a1: #CE14E3;// link color
+    --a2: #CE14E3;// link hover/focus color
+    --a3: #CE14E3;// link h1-h2 hover/focus color
+    --a4: #AE11BF;// link visited color
+    --cg: #373;// ins green, success
+    --cr: #d33;// del red, errors
+    background-color: #e9b3dd;
+}
+
+.header_title {
+    font-family: 'Matemasie';
+}
+
+.sblock {
+    max-width: 25rem;
+    margin-left: 2rem;
+}
+
+.blockdiv {
+    margin-top: 1.5rem;
+}
+
+.index-banner {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 46%;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    flex-direction: column;
+}
+// #ad00ad, #180618

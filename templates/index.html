@@ -1,0 +1,68 @@
+{% extends "abridge/templates/index.html" %}
+{%- block content %}
+    {% set banner = resize_image(path="banner.png", width=4800, op="fit_width") %}
+    <img src="{{ banner.url }}" class="index-banner" alt="sailor moon baybee"/>
+    <div class="content-row">
+        <div>
+            {%- for page in paginator.pages %}
+              <article>
+                {{- macros::title_index(page=page, config=config) }}
+                {%- if config.extra.meta_index.position %}
+                {%- if config.extra.meta_index.position == "top" or config.extra.meta_index.position == "both" %}
+                {{- macros::meta_index(page=page, config=config) }}
+                {%- endif %}{%- endif %}
+                <div class="sum">
+                <p>
+                {%- if page.summary %}
+                  {{ page.summary | markdown(inline=true) | safe }}
+                {%- elif page.description %}
+                  {{ page.description | safe }}
+                {%- elif page.content %}
+                  {{ page.content | safe }}
+                {%- elif page.extra.static_thumbnail %}
+                {%- endif %}
+                </div>
+                {%- if config.extra.meta_index.position %}
+                {%- if config.extra.meta_index.position == "bottom" or config.extra.meta_index.position == "both" %}
+                {{- macros::meta_index(page=page, config=config) }}
+                {%- endif %}
+                {%- endif %}
+              </article>
+            {%- endfor %}
+            {%- if config.extra.arrow_pagination %}
+            {{- macros::pagination(paginator=paginator, config=config) }}
+            {%- else %}
+            {{- macros::numpagination(paginator=paginator, config=config) }}
+            {%- endif %}
+            </div>
+          {%- if config.extra.recent | default(value=true) %}
+            {#- The following line is checking if the template is being used for the root or a section #}
+            {%- if current_path is matching("^(/[[:alpha:]][[:alpha:]])?(/page/[[:digit:]]+)?/$") %}
+              {%- set sec = "" %}
+            {%- else %}
+              {%- if lang == config.default_language %}
+                {%- set sec = current_path | trim_start_matches(pat="/") | split(pat="/page/") | slice(end=1) | join(sep="") | trim_end_matches(pat="/") %}
+                {%- set sec = sec ~ "/" %}
+              {%- else %}
+                {%- set sec = current_path | trim_start_matches(pat="/" ~ lang ~ "/") | split(pat="/page/") | slice(end=1) | join(sep="") | trim_end_matches(pat="/") %}
+                {%- set sec = sec ~ "/" %}
+              {%- endif %}
+            {%- endif %}
+        
+            {%- if lang == config.default_language %}
+            {%- set section_item = get_section(path=sec ~ "_index.md") %}
+            {%- else %}
+            {%- set section_item = get_section(path=sec ~ "_index." ~ lang ~ ".md") %}
+            {%- endif %}
+            <div class="sblock">
+              <div class="blockdiv sticky">
+                <span class="b s150">{{ macros::translate(key="Recent", default="Recent", i18n=i18n) }}</span>
+                {%- set recent_items=config.extra.recent_items | default(value=9) -%}
+                {%- for page in section_item.pages | slice(end=recent_items) %}
+                  {{- macros::page_listing(page=page, config=config) }}
+                {%- endfor %}
+              </div>
+        </div>
+    </div>
+  {%- endif %}
+{%- endblock content %}
