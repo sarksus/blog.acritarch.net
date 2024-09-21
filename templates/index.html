@@ -61,6 +61,12 @@
                 {%- for page in section_item.pages | slice(end=recent_items) %}
                   {{- macros::page_listing(page=page, config=config) }}
                 {%- endfor %}
+                <div>
+                  <span class="b s150">Blogroll</span>
+                  <ul>
+                    <li><a href="https://cohost.org/sarksus">My Cohost</a></li>
+                  </ul>
+                </div>
               </div>
         </div>
     </div>
