@@ -1,0 +1,23 @@
+name: Build And Deploy To Neocities
+
+on: 
+ push:
+  branches:
+   - main
+
+jobs:
+  build:
+    name: Build Zola Site
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Main
+      uses: actions/checkout@v4
+    - name: Build Only
+      uses: shalzz/zola-deploy-action@v0.19.2
+      env:
+        BUILD_ONLY: true
+    - name: Deploy To Neocities
+      uses: bcomnes/deploy-to-neocities@v2
+      with:
+      api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+      dist_dir: public
