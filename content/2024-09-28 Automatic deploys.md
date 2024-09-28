@@ -1,5 +1,5 @@
 +++
-title = Automatic deploys
+title = “Automatic deploys”
 date = 2024-09-28T15:46:49-04:00
 authors = ["sarksus"]
 [taxonomies]
