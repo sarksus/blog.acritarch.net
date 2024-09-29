@@ -3,7 +3,7 @@ base_url = "https://blog.acritarch.net"
 
 # The site title and description; used in feeds by default.
 title = "The Cherished Slime"
-description = "My blog where I discuss whatever I want, including writing, art, programming, gamedev, anime, books and other media"
+description = "My blog where I discuss whatever I want, including writing, art, music, programming, gamedev, anime, books and other media"
 
 theme = "abridge"
 
@@ -109,7 +109,7 @@ copyright_override = '© $CURRENT_YEAR Sarksus'
 title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
 title_addition = "" # a default value for title addition (for SEO aim for 50-70 characters including the title and separator 'Abridge | title_addition')
 author = "Sarksus" # Put Your Name here
-keywords = "blog, neocities, programming, art, video art, gamedev" # used for the primary site index
+keywords = "blog, neocities, writing, art, music, programming, gamedev, anime, books, video art" # used for the primary site index
 banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
 seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
 #dev = false # development mode, if true then robots.txt should prevent search indexing.
