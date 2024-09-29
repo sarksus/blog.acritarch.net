@@ -19,5 +19,6 @@ jobs:
     - name: Deploy To Neocities
       uses: bcomnes/deploy-to-neocities@v2
       with:
+        # generate a Neocities API token and set up a repo secret named NEOCITIES_API_TOKEN in the GitHub repo's Settings -> Secrets And Variables -> Actions and paste the API token in there
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         dist_dir: public
