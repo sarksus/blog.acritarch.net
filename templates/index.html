@@ -56,7 +56,7 @@
             {%- endif %}
             <div class="sblock">
               <div class="blockdiv sticky">
-                <span class="flex-container b s150">{{ macros::translate(key="Recent Posts", default="Recent Posts", i18n=i18n) }}</span>
+                <span class="b s150">{{ macros::translate(key="Recent Posts", default="Recent Posts", i18n=i18n) }}</span>
                 {%- set recent_items=config.extra.recent_items | default(value=9) -%}
                 {%- for page in section_item.pages | slice(end=recent_items) %}
                   {{- macros::page_listing(page=page, config=config) }}
