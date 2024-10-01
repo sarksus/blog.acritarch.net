@@ -6,7 +6,7 @@ authors = ["sarksus"]
 tags = ["Writing"]
 +++
 
-I want to be a bit indulgent with my book but in a tasteful way. Having said that...in my book’s backstory a couple thousand years ago there was an empire, it does the whole “rise and fall” thing, has all the best “this is why empires are doomed to fail” hits.
+I want to be a bit indulgent with my book but in a tasteful way. And by tasteful I mean I want to use genre tropes for a reason and in support of specific goals rather than dumping them into a big vat of tropes. Though there are some tropes I just like and will find justifications for. Having said that...in my book’s backstory a couple thousand years ago there was an empire, it does the whole “rise and fall” thing, has all the best “this is why empires are doomed to fail” hits.
 
 But also at the beginning of their decline they summon a hero from our world to fight a perceived enemy and the hero is like “oh y’all are the bad guys” and turns on them and leads a popular revolution and the empire falls even faster. At present time not much is known about this, and no heroes have been summoned since. But I just like isekai stories and deep history and I intend to fill out the history of the world quite a bit. Some of it will just inform the present day, some of it will be directly mentioned or discovered while exploring.
 
