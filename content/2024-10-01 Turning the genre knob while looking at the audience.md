@@ -14,6 +14,6 @@ After the empire the world eventually transitions to representative democracy an
 
 There is going to be hella justification for the various forms of flat and/or cooperative government structures seen in the book series at present day.
 
-Speaking of, one of the government structures I’ll be exploring is Communalism, thought up by Murray Bookchin.Communalism works on a local level, in smaller directly democratic assemblies that confederate with each other to form larger cooperative structures. This leads to people having more direct input and power over themselves, rather than leaving it up to representatives and having the average person ignoring political organization.
+Speaking of, one of the government structures I’ll be exploring is Communalism, thought up by Murray Bookchin. Communalism works on a local level, in smaller directly democratic assemblies that confederate with each other to form larger cooperative structures. This leads to people having more direct input and power over themselves, rather than leaving it up to representatives and having the average person ignoring political organization.
 
 I have really taken to heart what Ursula Le Guin has said about using sci-fi and fantasy to show people alternative ways to live beyond what we have right now. Those are the kinds of books I want to write. 
