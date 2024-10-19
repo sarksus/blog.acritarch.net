@@ -78,6 +78,13 @@
                     <li><a href="https://wintersouls.neocities.org/" title="Winter Souls">Winter Souls</a></li>
                   </ul>
                 </div>
+                <div>
+                  {% set terms = get_taxonomy(kind="tags") %}
+                  <span class="b s150">Tags</span>
+                  <ul>
+                    {% for term in terms.items %} <li><a href="tags/{{ term.name | lower }}">{{ term.name }}</a><sup>{{ term.pages | length }}</sup></li> {% endfor %}
+                  </ul>
+                </div>
               </div>
         </div>
     </div>
