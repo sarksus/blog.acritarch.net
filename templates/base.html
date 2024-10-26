@@ -1,0 +1,9 @@
+{% extends "abridge/templates/base.html" %}
+{%- block seo %}
+    {{ super() }}
+    {%- if page.extra.open.videos %}
+    {%- for video in page.extra.open.videos %}
+    <meta property="og:video" content="{{ get_url(path=video) }}" />
+    {%- endfor %}
+{%- endif %}
+{%- endblock seo %}
