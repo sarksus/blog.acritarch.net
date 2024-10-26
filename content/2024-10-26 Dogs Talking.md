@@ -4,6 +4,10 @@ date = 2024-10-26T00:22:43-04:00
 authors = ["sarksus"]
 [taxonomies]
 tags = ["Music", "Shitpost"]
+
+[extra]
+
+open.videos = ["videos/IMG_7951.mov"]
 +++
 
 <video width="220" controls src="/videos/IMG_7951.mov" title="a video of me playing a MIDI sequence of a dog sound effect that sounds like a big and small dog talking"></video>
